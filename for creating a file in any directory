@@ -1,0 +1,14 @@
+import java.io.File;
+
+public class A {
+public static void main(String[] args) {
+	try {
+		File f=new File("C:\\Java DSA\\FileHandeling\\The Ramayana.txt");
+		boolean val=f.delete();
+		System.out.println(val);
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+}
+}
