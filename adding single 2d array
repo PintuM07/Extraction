@@ -12,18 +12,10 @@ public class B {
 		int[][] x = new int[row][column];
 		int temp = 0;
 		System.out.println("Enter the elements for the array : "); 
-//		for (int i = 0; i < row; i++) {
-//			for (int j = 0; j < column; j++) {
-//				x[i][j]=sc.nextInt();
-//			}
-//		}
+
 		System.out.print("the given array:-");
 		for (int i = 0; i < row*column; i++) {
-//			System.out.println();
-//			for (int j = 0; j < x.length; j++) {
-//				System.out.print(x[i][j] + " ");
-//				temp = temp + x[i][j];
-//			}
+
 		   x[i / column][i % column] = sc.nextInt();
 			temp += x[i / column][i % column];
 
