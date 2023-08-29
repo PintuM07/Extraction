@@ -5,14 +5,14 @@ public class Solution {
         Scanner sc=new Scanner(System.in);
         String A=sc.next();
         /* Enter your code here. Print output to STDOUT. */
-        boolean val=is_plindrome(A);
+        boolean val=is_palindrome(A);
         if(val){
             System.out.println("Yes");
         }else{
             System.out.println("No");
         }
     }
-    public static boolean is_plindrome(String s){
+    public static boolean is_palindrome(String s){
         int right=s.length()-1;
         int left=0;
         while(left<right){
