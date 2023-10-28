@@ -1,0 +1,28 @@
+
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class B {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter array size: ");
+		int row=sc.nextInt();
+		int column=sc.nextInt();
+		int[][] x = new int[row][column];
+		int temp = 0;
+		System.out.println("Enter the elements for the array : "); 
+
+		System.out.print("the given array:-");
+		for (int i = 0; i < row*column; i++) {
+
+		   x[i / column][i % column] = sc.nextInt();
+			temp += x[i / column][i % column];
+
+		}
+		System.out.println();
+		System.out.print("sum of the array is : ");
+		System.out.println(temp);
+	}
+
+}

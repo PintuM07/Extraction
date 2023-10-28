@@ -1,0 +1,19 @@
+
+
+public class A{
+public static void main(String[] args) {
+        try{
+            Scanner scan = new Scanner(System.in);
+            int B = scan.nextInt();
+            int H = scan.nextInt();
+            int c = B / H;
+            System.out.println(c);
+
+        }  catch(InputMismatchException e) {
+            System.out.println(new InputMismatchException());
+        }
+        catch(ArithmeticException e) {
+            System.out.println(e);
+        }
+    }
+}

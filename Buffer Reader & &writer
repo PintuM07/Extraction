@@ -1,0 +1,44 @@
+package p4;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class FilesWriter {
+	
+public static void main(String[] args) {
+	try {
+		FileWriter fw=new FileWriter("C:\\Java DSA\\FileHandeling\\R");
+		BufferedWriter bw= new BufferedWriter(fw);
+		bw.write("100");
+		bw.newLine();
+		bw.write("anything but the thing is to wrute anything about me or anyone");
+		bw.newLine();
+		char[] ch= {'x','y'};
+		bw.write(ch);
+		bw.close();
+		fw.close();
+		
+		FilesWriter A=new FilesWriter();
+		A.test();
+	} catch (Exception e) {
+		// TODO: handle exception
+		e.printStackTrace();
+	}
+}
+public void test() {
+	try {
+		FileReader fr=new FileReader("C:\\Java DSA\\FileHandeling\\R");
+		BufferedReader br=new BufferedReader(fr);
+		for (int i = 0; i < 3; i++) {
+			System.out.println(br.readLine());
+		}
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+		e.printStackTrace();
+	}
+}
+
+}

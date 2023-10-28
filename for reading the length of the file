@@ -1,0 +1,16 @@
+File Handeling
+
+
+
+public class A {
+public static void main(String[] args) {
+	try {
+		File f=new File("C:\\Java DSA\\FileHandeling\\The Ramayana.txt");
+		long val=f.length();
+		System.out.println(val);
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+}
+}
